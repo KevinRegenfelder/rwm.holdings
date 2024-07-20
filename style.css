@@ -260,6 +260,8 @@ span {
   width: 100%;
   height: 100%;
   backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px); /* Safari */
+  background-color: rgba(255, 255, 255, 0.5); /* Fallback */
   display: none;
   z-index: 9998;
 }
@@ -326,3 +328,5 @@ a.email-link {
   color: var(--primary);
   text-decoration: none;
 }
+
+
